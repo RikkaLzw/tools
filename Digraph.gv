@@ -1,0 +1,41 @@
+digraph {
+	graph [ranksep=0.3]
+	A [label="
+function doNothing() public { \l    uint i = 0;\l    while(i < 5) {\l        i++;\l    }\l}\l
+" shape=box]
+	B [label=FunctionDefinition shape=box style=rounded]
+	C [label=ParameterList shape=box style=rounded]
+	D [label=ParameterList shape=box style=rounded]
+	E [label=BlockStatement shape=box style=rounded]
+	F [label=VariableDeclarationStatement shape=box style=rounded]
+	G [label=WhileStatement shape=box style=rounded]
+	H [label=Literal shape=box style=rounded]
+	I [label=VariableDeclaration shape=box style=rounded]
+	J [label=ElementaryTypeName shape=box style=rounded]
+	K [label=BinaryOperation shape=box style=rounded]
+	L [label=BlockStatement shape=box style=rounded]
+	M [label=Literal shape=box style=rounded]
+	N [label=Identifier shape=box style=rounded]
+	O [label=ExpressionStatement shape=box style=rounded]
+	P [label=UnaryOperation shape=box style=rounded]
+	Q [label=Identifier shape=box style=rounded]
+	R [label=MemberReference shape=box style=rounded]
+	S [label=MemberReference shape=box style=rounded]
+	B -> C
+	B -> D
+	B -> E
+	E -> F
+	E -> G
+	F -> H
+	F -> I
+	I -> J
+	G -> K
+	G -> L
+	K -> M
+	K -> N
+	L -> O
+	O -> P
+	P -> Q
+	Q -> R
+	N -> S
+}
